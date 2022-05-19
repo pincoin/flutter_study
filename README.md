@@ -13,3 +13,6 @@
 ## Do It 플러터 앱 프로그래밍 - 조준수
 
 ## 모바일 앱 개발을 위한 다트&플러터 - 서준수
+
+## Udemy Flutter & Dart - Maximilian
+* Section2: max_quiz
