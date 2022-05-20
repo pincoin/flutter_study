@@ -6,10 +6,6 @@ void main() => runApp(const MyApp());
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  void answerQuestion() {
-    print('Answer chosen!');
-  }
-
   @override
   Widget build(BuildContext context) {
     var questions = [
@@ -27,9 +23,7 @@ class MyApp extends StatelessWidget {
         body: Column(children: [
           const Text('the question'),
           ElevatedButton(
-            // 이벤트 핸들러로 함수 이름만 써서 함수 포인터로 전달
-            // 함수의 이름만 전달해두고 실제로 이벤트가 발생할 때 호출되도록 함
-            onPressed: answerQuestion,
+            onPressed: () => {},
             child: const Text('Answer 1'),
           ),
           ElevatedButton(
