@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import './question.dart';
-import './answer.dart';
+import '../question.dart';
+import '../answer.dart';
 
 // 람다식 함수 호출
 void main() => runApp(const MyApp());
