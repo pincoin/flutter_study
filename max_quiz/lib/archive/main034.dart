@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   var questionIndex = 0;
 
   void answerQuestion() {
-    // 인덱스 값이 증가하지만 질문은 바뀌지 않는다.
+    // Stateless 위젯이므로 인덱스 값이 증가해도 질문은 바뀌지 않는다.
     questionIndex += 1;
     print(questionIndex);
   }
