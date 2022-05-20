@@ -9,6 +9,8 @@ class Question extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      // Column과 Container 위젯 너비는
+      // 화면 전체가 아닌 자식을 감쌀 수 있을 정도 만큼만 차지한다.
       width: double.infinity,
       margin: const EdgeInsets.all(10),
       // 위젯의 배치 컨트롤위젯보다 레이아웃 위젯에서
