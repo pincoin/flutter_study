@@ -11,12 +11,12 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  var questionIndex = 0;
+  var _questionIndex = 0;
 
-  void answerQuestion() {
+  void _answerQuestion() {
     // Stateful 위젯의 상태를 변경하고 그 값을 반영한다.
     setState(() {
-      questionIndex += 1;
+      _questionIndex += 1;
     });
   }
 
@@ -35,11 +35,11 @@ class _MyAppState extends State<MyApp> {
           title: const Text('My First App'),
         ),
         body: Column(children: [
-          Text(questions[questionIndex]),
+          Text(questions[_questionIndex]),
           ElevatedButton(
             // 이벤트 핸들러로 함수 이름만 써서 함수 포인터로 전달
             // 함수의 이름만 전달해두고 실제로 이벤트가 발생할 때 호출되도록 함
-            onPressed: answerQuestion,
+            onPressed: _answerQuestion,
             child: const Text('Answer 1'),
           ),
           ElevatedButton(
