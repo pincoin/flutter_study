@@ -33,11 +33,11 @@ class MyApp extends StatelessWidget {
             child: const Text('Answer 1'),
           ),
           ElevatedButton(
-            onPressed: () => {},
+            onPressed: answerQuestion,
             child: const Text('Answer 2'),
           ),
           ElevatedButton(
-            onPressed: () => {},
+            onPressed: answerQuestion,
             child: const Text('Answer 3'),
           ),
         ]),
