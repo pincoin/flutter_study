@@ -8,6 +8,17 @@ class Question extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(questionText);
+    return Container(
+      width: double.infinity,
+      margin: const EdgeInsets.all(10),
+      // 위젯의 배치 컨트롤위젯보다 레이아웃 위젯에서
+      alignment: Alignment.center,
+      child: Text(
+        questionText,
+        style: const TextStyle(fontSize: 28),
+        // 위젯의 배치는 컨트롤위젯보다 레이아웃 위젯에서
+        // textAlign: TextAlign.center,
+      ),
+    );
   }
 }
