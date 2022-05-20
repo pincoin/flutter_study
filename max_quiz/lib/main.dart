@@ -47,7 +47,7 @@ class _MyAppState extends State<MyApp> {
           title: const Text('My First App'),
         ),
         body: Column(children: [
-          Question(questions[_questionIndex]),
+          Question(questions[_questionIndex]['questionText'] as String),
           Answer('Answer 1', _answerQuestion),
           Answer('Answer 2', _answerQuestion),
           Answer('Answer 3', _answerQuestion),
