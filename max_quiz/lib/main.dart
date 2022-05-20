@@ -1,17 +1,23 @@
 import 'package:flutter/material.dart';
 
 // 람다식 함수 호출
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
-class MyApp extends StatelessWidget {
-  MyApp({Key? key}) : super(key: key);
+class MyApp extends StatefulWidget {
+  const MyApp({Key? key}) : super(key: key);
 
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   var questionIndex = 0;
 
   void answerQuestion() {
-    // 인덱스 값이 증가하지만 질문은 바뀌지 않는다.
-    questionIndex += 1;
-    print(questionIndex);
+    // Stateful 위젯의 상태를 변경하고 그 값을 반영한다.
+    setState(() {
+      questionIndex += 1;
+    });
   }
 
   @override
