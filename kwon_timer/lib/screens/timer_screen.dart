@@ -118,11 +118,11 @@ class _TimerScreenState extends State<TimerScreen> {
             _timerStatus == TimerStatus.resting ? Colors.green : Colors.blue,
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly, // 중간에 Padding, SizedBox 쓰는 것보다 고려
         children: [
           Container(
             padding: EdgeInsets.symmetric(
-                vertical: MediaQuery.of(context).size.height * 0.15),
+                vertical: MediaQuery.of(context).size.height * 0.1),
             alignment: Alignment.center,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
@@ -139,7 +139,6 @@ class _TimerScreenState extends State<TimerScreen> {
               ),
             ),
           ),
-          SizedBox(height: MediaQuery.of(context).size.height * 0.1),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: _timerStatus == TimerStatus.resting
