@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/question.dart';
+import '../widgets/quiz.dart';
 import '../widgets/result.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -79,7 +79,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(title: const Text('My Quiz')),
       body: _questionIndex < _questions.length
-          ? Question(
+          ? Quiz(
               _questions[_questionIndex]['text'] as String,
               _questions[_questionIndex]['answers']
                   as List<Map<String, dynamic>>,
