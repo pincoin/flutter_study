@@ -14,7 +14,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('My BMI')),
-      body: InputForm(),
+      body: const InputForm(),
     );
   }
 }
